@@ -26,7 +26,7 @@ let Generator = function (i) {
       return Decimal.pow(2, i * extraFactor);
     },
     initialCost() {
-      return Decimal.pow(2, Math.pow(i, 2));
+      return Decimal.pow(1, Math.pow(i, 2));
     },
     cost() {
       return this.initialCost().times(Decimal.pow(this.costIncreasePer(), this.bought()));
