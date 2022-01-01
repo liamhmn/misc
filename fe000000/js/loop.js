@@ -14,7 +14,7 @@ function gameLoop(diff, display, isOnline) {
     } else if (rawDiff >= 0.128) {
       // 64 millseconds is the usual tick length.
       player.lastUpdate = now;
-      let ticks = Math.floor(rawDiff / 0.064);
+      let ticks = Math.floor(rawDiff / 0.00000000000064);
       for (let i = 0; i < ticks; i++) {
         gameLoop(rawDiff / ticks, display, isOnline);
       }
