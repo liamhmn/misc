@@ -13,7 +13,7 @@ let InfinityPoints = {
   multiplier() {
     let mult = this.totalIPProducedThisEternity().div(4).plus(1);
     if (!InfinityChallenge.isInfinityChallengeCompleted(1)) {
-      mult = mult.min(16);
+      mult = mult.min(160000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
     }
     return mult;
   }
